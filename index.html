@@ -1,412 +1,923 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Taewoong Yoon — M.S. student at Konkuk University NLP Lab. Research on large language model reasoning, efficient inference, self-consistency, and multimodal AI." />
-  <meta name="author" content="Taewoong Yoon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta property="og:title" content="Taewoong Yoon" />
-  <meta property="og:description" content="M.S. Student · NLP Lab, Konkuk University" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://github.com/twyoon99.png" />
+  <meta
+    name="description"
+    content="Taewoong Yoon — M.S. student at Konkuk University NLP Lab. Research on efficient and reliable large language model reasoning."
+  />
 
   <title>Taewoong Yoon</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="brand" href="#top">Taewoong Yoon</a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
-        <a href="#awards">Awards</a>
-      </nav>
-    </div>
-  </header>
 
-  <main id="top" class="page-shell">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="portrait-wrap">
-        <img
-          class="portrait"
-          src="https://github.com/twyoon99.png"
-          alt="Portrait of Taewoong Yoon"
-          width="240"
-          height="240"
-        />
-      </div>
+<header class="site-header">
+  <div class="nav-container">
+
+    <a class="brand" href="#top">
+      Taewoong Yoon
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Selected Work</a>
+      <a href="#publications">Publications</a>
+      <a href="#awards">Awards</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        aria-label="Toggle dark mode"
+      >
+        ◐
+      </button>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation"
+      >
+        ☰
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
 
       <div class="hero-copy">
-        <p class="eyebrow">M.S. Student · NLP Lab</p>
-        <h1 id="hero-title">Taewoong Yoon</h1>
-        <p class="subtitle">Artificial Intelligence, Konkuk University</p>
-        <p class="hero-summary">
-          I study how to make <strong>large language model reasoning</strong> more
-          reliable and efficient. My recent work focuses on <strong>adaptive self-consistency</strong>,
-          <strong>model confidence and difficulty estimation</strong>, and
-          <strong>multimodal understanding</strong>.
+
+        <p class="eyebrow">
+          M.S. Student · Konkuk University NLP Lab
         </p>
 
-        <div class="topic-row" aria-label="Research interests">
+        <h1>
+          Taewoong<br />
+          Yoon
+        </h1>
+
+        <p class="hero-description">
+          I am interested in making
+          <strong>large language model reasoning</strong>
+          more reliable and efficient.
+          My research focuses on model confidence,
+          difficulty estimation, self-consistency,
+          efficient inference, and multimodal understanding.
+        </p>
+
+        <div class="research-tags">
           <span>LLM Reasoning</span>
           <span>Efficient Inference</span>
           <span>Self-Consistency</span>
           <span>Multimodal AI</span>
         </div>
 
-        <div class="link-row">
-          <a class="button primary" href="mailto:taewoong816@gmail.com">Email</a>
-          <a class="button" href="https://github.com/twyoon99" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="button" href="http://nlp.konkuk.ac.kr/" target="_blank" rel="noreferrer">NLP Lab</a>
+        <div class="hero-links">
+          <a
+            class="button primary"
+            href="mailto:taewoong816@gmail.com"
+          >
+            Email
+          </a>
+
+          <a
+            class="button"
+            href="https://github.com/twyoon99"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub ↗
+          </a>
+
+          <a
+            class="button"
+            href="https://kr.linkedin.com/in/woong816"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            class="button"
+            href="http://nlp.konkuk.ac.kr/"
+            target="_blank"
+            rel="noopener"
+          >
+            NLP Lab ↗
+          </a>
         </div>
-      </div>
-    </section>
 
-    <section id="about" class="section">
-      <div class="section-heading">
-        <p class="section-kicker">Profile</p>
-        <h2>About</h2>
       </div>
 
-      <div class="prose about-grid">
-        <p>
-          Hello! I am an M.S. student in Artificial Intelligence at
-          <strong>Konkuk University</strong>, working in the NLP Lab. I received my B.S.
-          in Medical Artificial Intelligence from Konyang University.
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <img
+            src="https://github.com/twyoon99.png"
+            alt="Taewoong Yoon"
+            class="hero-photo"
+          />
+        </div>
+
+        <p class="photo-caption">
+          Konkuk University · Seoul, Korea
         </p>
-        <p>
-          My work spans efficient and trustworthy LLM reasoning, from token- and
-          activation-level confidence signals to adaptive inference methods, as well as
-          multimodal evaluation. I previously worked as a research intern at
-          <strong>ETRI</strong> and as an intern at <strong>TUNiB</strong>.
-        </p>
       </div>
 
-      <div class="highlight-strip" aria-label="Selected highlights">
-        <div class="highlight-item">
-          <strong>KDD 2026</strong>
-          <span>MMID · D&amp;B Track</span>
-        </div>
-        <div class="highlight-item">
-          <strong>2× Grand Award</strong>
-          <span>NIKL 2025 · Microsoft Korea 2024</span>
-        </div>
-        <div class="highlight-item">
-          <strong>LLM Reasoning</strong>
-          <span>Self-consistency · confidence · difficulty</span>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="publications" class="section">
-      <div class="section-heading with-note">
-        <div>
-          <p class="section-kicker">Selected work</p>
-          <h2>Publications</h2>
-        </div>
-        <p class="section-note">Selected publications, preprints, and conference papers</p>
+
+  <!-- EDUCATION -->
+  <section
+    class="band band-alt"
+    id="education"
+  >
+    <div class="container">
+
+      <div class="section-title">
+        <span>01</span>
+        <h2>Education</h2>
       </div>
 
-      <div class="year-group">
-        <div class="year-label">2026</div>
-        <div class="publication-list">
-          <article class="publication-card featured-pub">
-            <div class="pub-thumb thumb-kdd" aria-hidden="true">
-              <span>KDD</span>
-              <small>2026</small>
-            </div>
-            <div class="pub-body">
-              <div class="pub-topline"><span class="venue">KDD 2026 · D&amp;B Track</span></div>
-              <h3>MMID: Multi-turn Multimodal Interactive Dialogue Benchmark</h3>
-              <p class="authors">Seulgi Kim*, Juoh Sun*, Sumin Kim, <strong>Taewoong Yoon</strong>, YuShin Kim, Saim Shin, Harksoo Kim · * co-first authors</p>
-              <p class="pub-description">A benchmark for evaluating multimodal models in interactive, multi-turn dialogue settings.</p>
-              <div class="pub-links">
-                <a href="https://doi.org/10.1145/3770855.3817554" target="_blank" rel="noreferrer">Paper ↗</a>
-              </div>
-            </div>
-          </article>
+      <div class="timeline">
 
-          <article class="publication-card featured-pub">
-            <div class="pub-thumb thumb-fsc" aria-hidden="true">
-              <span>FSC</span>
-              <small>arXiv</small>
-            </div>
-            <div class="pub-body">
-              <div class="pub-topline"><span class="venue">arXiv 2026</span></div>
-              <h3>Is Discrete Difficulty Sufficient? Leveraging Continuous Difficulty for Efficient Self-Consistency in LLMs</h3>
-              <p class="authors">Sihyeong Yeom, Geon Park, Geunyeong Jeong, <strong>Taewoong Yoon</strong>, Jaewook Lee, Harksoo Kim</p>
-              <p class="pub-description">Continuous difficulty estimation for more efficient allocation of self-consistency computation.</p>
-              <div class="pub-links">
-                <a href="https://arxiv.org/abs/2608.24590" target="_blank" rel="noreferrer">Paper ↗</a>
-              </div>
-            </div>
-          </article>
+        <article class="timeline-item">
 
-          <article class="publication-card featured-pub">
-            <div class="pub-thumb thumb-actsc" aria-hidden="true">
-              <span>ACTSC</span>
-              <small>arXiv</small>
-            </div>
-            <div class="pub-body">
-              <div class="pub-topline"><span class="venue">arXiv 2026</span></div>
-              <h3>Breaking the Pre-Sampling Barrier: Activation-Informed Difficulty-Aware Self-Consistency</h3>
-              <p class="authors"><strong>Taewoong Yoon</strong>, Geunyeong Jeong, Geon Park, Sihyeong Yeom, Harksoo Kim</p>
-              <p class="pub-description">Uses model activations to estimate problem difficulty before sampling and adapt the self-consistency budget.</p>
-              <div class="pub-links">
-                <a href="https://arxiv.org/abs/2602.09438" target="_blank" rel="noreferrer">Paper ↗</a>
-              </div>
-            </div>
-          </article>
+          <div class="timeline-logo">
+            KU
+          </div>
 
-          <!-- KCC 2026 -->
-          <article class="publication-card compact-card">
-            <div class="pub-thumb thumb-kcc" aria-hidden="true">
-              <span>KCC</span>
-              <small>Oral</small>
-            </div>
-          
-            <div class="pub-body">
-              <div class="pub-topline">
-                <span class="venue">KCC 2026 · Oral</span>
-              </div>
-          
-              <h3>
-                Improving Efficiency Self-Consistency via Neuron Based Difficulty Estimation
-              </h3>
-          
-              <p class="authors">
-                <strong>Taewoong Yoon</strong>, Geunyeong Jeong, Harksoo Kim
-              </p>
-            </div>
-          </article>
-          
-          
-          <!-- KCC 2026 -->
-          <article class="publication-card compact-card">
-            <div class="pub-thumb thumb-kcc-alt" aria-hidden="true">
-              <span>KCC</span>
-              <small>Oral</small>
-            </div>
-          
-            <div class="pub-body">
-              <div class="pub-topline">
-                <span class="venue">KCC 2026 · Oral</span>
-              </div>
-          
-              <h3>
-                Improving LLM Elimination-Based Selection via Relative Comparison of Confidence Scores
-              </h3>
-          
-              <p class="authors">
-                Hyunwook Jeong, Geunyeong Jeong,
-                <strong>Taewoong Yoon</strong>, Harksoo Kim
-              </p>
-            </div>
-          </article>
-          
-          
-          <!-- HCLT-KACL 2025 -->
-          <article class="publication-card compact-card">
-            <div class="pub-thumb thumb-hclt" aria-hidden="true">
-              <span>HCLT</span>
-              <small>Oral</small>
-            </div>
-          
-            <div class="pub-body">
-              <div class="pub-topline">
-                <span class="venue">HCLT-KACL 2025 · Oral</span>
-              </div>
-          
-              <h3>
-                Improving Reasoning Ability of Large Language Models Using Token Confidence based Self Consistency
-              </h3>
-          
-              <p class="authors">
-                <strong>Taewoong Yoon</strong>, Geunyeong Jeong, Harksoo Kim
-              </p>
-            </div>
-          </article>
-          
-          
-          <!-- KCC 2025 -->
-          <article class="publication-card compact-card">
-            <div class="pub-thumb thumb-kcc-2025" aria-hidden="true">
-              <span>KCC</span>
-              <small>Oral</small>
-            </div>
-          
-            <div class="pub-body">
-              <div class="pub-topline">
-                <span class="venue">KCC 2025 · Oral</span>
-              </div>
-          
-              <h3>
-                Improving Mathematical Reasoning of Large Language Models via Loss Weighting on Mathematical Expressions
-              </h3>
-          
-              <p class="authors">
-                <strong>Taewoong Yoon</strong>, Geunyeong Jeong, Harksoo Kim
-              </p>
-            </div>
-          </article>
-          
-          
-          <!-- LoCCA -->
-          <article class="publication-card compact-card">
-            <div class="pub-thumb thumb-locca" aria-hidden="true">
-              <span>LoCCA</span>
-              <small>Poster</small>
-            </div>
-          
-            <div class="pub-body">
-              <div class="pub-topline">
-                <span class="venue">KCC 2025 · Poster</span>
-              </div>
-          
-              <h3>
-                LoCCA-Frame: A Low-Cost and Strategy-Guided Prompting Framework for Enhancing Diagnosis-Prediction Mental Health Counseling
-              </h3>
-          
-              <p class="authors">
-                Kwangil Kim, Seulgi Kim, Seongbae Park,
-                <strong>Taewoong Yoon</strong>,
-                Jiwoo Song, Yeonseok Choi, Harksoo Kim
-              </p>
-            </div>
-          </article>
+          <div class="timeline-main">
+            <h3>Konkuk University</h3>
+
+            <p class="role">
+              M.S. in Artificial Intelligence · NLP Lab
+            </p>
+
+            <p class="detail">
+              Advisor: Prof. Harksoo Kim
+            </p>
+          </div>
+
+          <time>
+            Mar 2025 — Present
+          </time>
+
+        </article>
+
+
+        <article class="timeline-item">
+
+          <div class="timeline-logo">
+            KYU
+          </div>
+
+          <div class="timeline-main">
+            <h3>Konyang University</h3>
+
+            <p class="role">
+              B.S. in Medical Artificial Intelligence
+            </p>
+          </div>
+
+          <time>
+            Mar 2021 — Feb 2025
+          </time>
+
+        </article>
+
       </div>
-    </section>
 
-    <section id="experience" class="section">
-      <div class="section-heading">
-        <p class="section-kicker">Background</p>
+    </div>
+  </section>
+
+
+  <!-- EXPERIENCE -->
+  <section
+    class="band"
+    id="experience"
+  >
+    <div class="container">
+
+      <div class="section-title">
+        <span>02</span>
         <h2>Experience</h2>
       </div>
 
       <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-date">Jul 2024 — Aug 2024</div>
-          <div class="timeline-content">
-            <h3>Electronics and Telecommunications Research Institute (ETRI)</h3>
-            <p class="timeline-role">Research Intern · Language Intelligence Research Section</p>
-            <p>Worked on a Math Dial teaching chatbot, including LLM fine-tuning, evaluation-pipeline construction, and data preprocessing.</p>
-          </div>
-        </article>
 
         <article class="timeline-item">
-          <div class="timeline-date">Jun 2023 — Aug 2023</div>
-          <div class="timeline-content">
+
+          <div class="timeline-logo wide">
+            ETRI
+          </div>
+
+          <div class="timeline-main">
+
+            <h3>
+              Electronics and Telecommunications
+              Research Institute
+            </h3>
+
+            <p class="role">
+              Research Intern · Language Intelligence Research Section
+            </p>
+
+            <p class="detail">
+              Worked on an LLM-based Math Dial teaching chatbot,
+              including model fine-tuning, evaluation-pipeline
+              construction, and data processing.
+            </p>
+
+          </div>
+
+          <time>
+            Jul 2024 — Aug 2024
+          </time>
+
+        </article>
+
+
+        <article class="timeline-item">
+
+          <div class="timeline-logo wide">
+            TUNiB
+          </div>
+
+          <div class="timeline-main">
+
             <h3>TUNiB</h3>
-            <p class="timeline-role">Intern · Data Labeling Team</p>
-            <p>Worked on chatbot ideation, web crawling, LLM fine-tuning, data curation, chatbot QA, and ethics-model testing.</p>
+
+            <p class="role">
+              Intern · Data Labeling Team
+            </p>
+
+            <p class="detail">
+              Worked on LLM fine-tuning, data curation,
+              chatbot QA, web crawling, and ethics-model evaluation.
+            </p>
+
           </div>
+
+          <time>
+            Jun 2023 — Aug 2023
+          </time>
+
         </article>
+
       </div>
 
-      <div class="subsection-heading">
-        <h3>Education</h3>
-      </div>
-      <div class="timeline compact-timeline">
-        <article class="timeline-item">
-          <div class="timeline-date">Mar 2025 — Present</div>
-          <div class="timeline-content">
-            <h3>Konkuk University</h3>
-            <p class="timeline-role">M.S. in Artificial Intelligence · NLP Lab</p>
-          </div>
-        </article>
+    </div>
+  </section>
 
-        <article class="timeline-item">
-          <div class="timeline-date">Mar 2021 — Feb 2025</div>
-          <div class="timeline-content">
-            <h3>Konyang University</h3>
-            <p class="timeline-role">B.S. in Medical Artificial Intelligence</p>
-          </div>
-        </article>
-      </div>
-    </section>
 
-    <section id="awards" class="section">
-      <div class="section-heading">
-        <p class="section-kicker">Selected honors</p>
-        <h2>Awards</h2>
+  <!-- SELECTED WORK -->
+  <section
+    class="band band-alt"
+    id="work"
+  >
+    <div class="container">
+
+      <div class="section-title">
+        <span>03</span>
+        <h2>Selected Work</h2>
       </div>
 
-      <div class="award-list">
-        <article class="award-item major-award">
-          <div class="award-year">2025</div>
-          <div>
-            <h3>Grand Award (Minister of Culture, Sports and Tourism Award) &amp; KT Special Award</h3>
-            <p class="award-venue">National Institute of Korean Language AI Malpyeong Competition</p>
-            <p class="award-detail">Responsible for exact-match Korean QA; built a self-consistency-based self-correction pipeline to generate, compare, and re-reason over multiple responses for more factual answers.</p>
+
+      <div class="work-list">
+
+        <!-- ACTSC -->
+        <article class="work-card reveal">
+
+          <div
+            class="paper-media"
+            data-fallback="ACTSC · arXiv 2026"
+          >
+            <img
+              src="assets/papers/actsc.png"
+              alt="First page of ACTSC"
+              loading="lazy"
+            />
           </div>
+
+          <div class="work-body">
+
+            <div class="venue">
+              arXiv 2026
+            </div>
+
+            <h3>
+              Breaking the Pre-Sampling Barrier:
+              Activation-Informed Difficulty-Aware Self-Consistency
+            </h3>
+
+            <p class="authors">
+              <strong>Taewoong Yoon</strong>,
+              Geunyeong Jeong,
+              Geon Park,
+              Sihyeong Yeom,
+              Harksoo Kim
+            </p>
+
+            <p class="work-description">
+              Estimates problem difficulty directly from internal
+              activation signals and adaptively controls the
+              self-consistency sampling budget without pre-sampling.
+            </p>
+
+            <div class="paper-links">
+
+              <a
+                href="https://arxiv.org/abs/2602.09438"
+                target="_blank"
+                rel="noopener"
+              >
+                arXiv ↗
+              </a>
+
+            </div>
+
+          </div>
+
         </article>
 
-        <article class="award-item major-award">
-          <div class="award-year">2024</div>
-          <div>
-            <h3>Grand Award</h3>
-            <p class="award-venue">Microsoft Korea Artificial Intelligence Competition</p>
-            <p class="award-detail">Developed an interactive memory-support system for older adults and people with memory impairment using Azure-based DeepFake and DeepVoice technologies.</p>
+
+        <!-- FSC -->
+        <article class="work-card reveal">
+
+          <div
+            class="paper-media"
+            data-fallback="FSC · arXiv 2026"
+          >
+            <img
+              src="assets/papers/fsc.png"
+              alt="First page of Flexible Self-Consistency"
+              loading="lazy"
+            />
           </div>
+
+          <div class="work-body">
+
+            <div class="venue">
+              arXiv 2026
+            </div>
+
+            <h3>
+              Is Discrete Difficulty Sufficient?
+              Leveraging Continuous Difficulty for
+              Efficient Self-Consistency in LLMs
+            </h3>
+
+            <p class="authors">
+              Sihyeong Yeom,
+              Geon Park,
+              Geunyeong Jeong,
+              <strong>Taewoong Yoon</strong>,
+              Jaewook Lee,
+              Harksoo Kim
+            </p>
+
+            <p class="work-description">
+              Uses predicted output entropy as a continuous
+              difficulty signal to allocate reasoning paths
+              more precisely and reduce unnecessary inference cost.
+            </p>
+
+            <div class="paper-links">
+
+              <a
+                href="https://arxiv.org/abs/2608.24590"
+                target="_blank"
+                rel="noopener"
+              >
+                arXiv ↗
+              </a>
+
+            </div>
+
+          </div>
+
         </article>
 
-        <article class="award-item">
-          <div class="award-year">2024</div>
-          <div>
-            <h3>Excellent Paper Award</h3>
-            <p class="award-venue">KAICTS Spring Conference</p>
-            <p class="award-detail">First-author work comparing LSTM and Transformer models for EEG-based behavior identification.</p>
+
+        <!-- MMID -->
+        <article class="work-card reveal">
+
+          <div
+            class="paper-media"
+            data-fallback="MMID · KDD 2026"
+          >
+            <img
+              src="assets/papers/mmid.png"
+              alt="First page of MMID"
+              loading="lazy"
+            />
           </div>
+
+          <div class="work-body">
+
+            <div class="venue">
+              KDD 2026 · Datasets &amp; Benchmarks Track
+            </div>
+
+            <h3>
+              MMID:
+              Multi-turn Multimodal Interactive Dialogue Benchmark
+            </h3>
+
+            <p class="authors">
+              Seulgi Kim*,
+              Juoh Sun*,
+              Sumin Kim,
+              <strong>Taewoong Yoon</strong>,
+              YuShin Kim,
+              Saim Shin,
+              Harksoo Kim
+            </p>
+
+            <p class="work-description">
+              A benchmark designed to evaluate multimodal models
+              under interactive and multi-turn dialogue settings.
+            </p>
+
+            <div class="paper-links">
+
+              <a
+                href="https://doi.org/10.1145/3770855.3817554"
+                target="_blank"
+                rel="noopener"
+              >
+                Paper ↗
+              </a>
+
+            </div>
+
+          </div>
+
         </article>
 
-        <article class="award-item compact-award">
-          <div class="award-year">2024</div>
-          <div>
-            <h3>Top 7% (14 / 219 teams)</h3>
-            <p class="award-venue">DACON SW-Centered University Digital Competition · Generative AI Track</p>
-          </div>
-        </article>
       </div>
-    </section>
 
-    <section class="section mini-section">
-      <div class="section-heading">
-        <p class="section-kicker">Speaking</p>
-        <h2>Invited Talk</h2>
+    </div>
+  </section>
+
+
+  <!-- PUBLICATIONS -->
+  <section
+    class="band"
+    id="publications"
+  >
+    <div class="container">
+
+      <div class="section-title">
+        <span>04</span>
+        <h2>Publications</h2>
       </div>
-      <div class="talk-item">
-        <time datetime="2026-02-27">Feb 27, 2026</time>
+
+      <p class="section-description">
+        Selected publications and preprints.
+      </p>
+
+
+      <div class="publication-year">
+
+        <h3 class="year">
+          2026
+        </h3>
+
+
+        <article class="publication">
+
+          <div class="pub-index">
+            01
+          </div>
+
+          <div class="pub-content">
+
+            <div class="venue">
+              KDD 2026 · D&amp;B Track
+            </div>
+
+            <h4>
+              MMID: Multi-turn Multimodal Interactive Dialogue Benchmark
+            </h4>
+
+            <p>
+              Seulgi Kim*, Juoh Sun*, Sumin Kim,
+              <strong>Taewoong Yoon</strong>,
+              YuShin Kim, Saim Shin, Harksoo Kim
+            </p>
+
+          </div>
+
+          <a
+            class="pub-action"
+            href="https://doi.org/10.1145/3770855.3817554"
+            target="_blank"
+            rel="noopener"
+          >
+            ↗
+          </a>
+
+        </article>
+
+
+        <article class="publication">
+
+          <div class="pub-index">
+            02
+          </div>
+
+          <div class="pub-content">
+
+            <div class="venue">
+              arXiv 2026
+            </div>
+
+            <h4>
+              Is Discrete Difficulty Sufficient?
+              Leveraging Continuous Difficulty for
+              Efficient Self-Consistency in LLMs
+            </h4>
+
+            <p>
+              Sihyeong Yeom,
+              Geon Park,
+              Geunyeong Jeong,
+              <strong>Taewoong Yoon</strong>,
+              Jaewook Lee,
+              Harksoo Kim
+            </p>
+
+          </div>
+
+          <a
+            class="pub-action"
+            href="https://arxiv.org/abs/2608.24590"
+            target="_blank"
+            rel="noopener"
+          >
+            ↗
+          </a>
+
+        </article>
+
+
+        <article class="publication">
+
+          <div class="pub-index">
+            03
+          </div>
+
+          <div class="pub-content">
+
+            <div class="venue">
+              arXiv 2026
+            </div>
+
+            <h4>
+              Breaking the Pre-Sampling Barrier:
+              Activation-Informed Difficulty-Aware Self-Consistency
+            </h4>
+
+            <p>
+              <strong>Taewoong Yoon</strong>,
+              Geunyeong Jeong,
+              Geon Park,
+              Sihyeong Yeom,
+              Harksoo Kim
+            </p>
+
+          </div>
+
+          <a
+            class="pub-action"
+            href="https://arxiv.org/abs/2602.09438"
+            target="_blank"
+            rel="noopener"
+          >
+            ↗
+          </a>
+
+        </article>
+
+
+        <article class="publication">
+
+          <div class="pub-index">
+            04
+          </div>
+
+          <div class="pub-content">
+
+            <div class="venue">
+              KCC 2026 · Oral
+            </div>
+
+            <h4>
+              Improving Efficiency Self-Consistency
+              via Neuron Based Difficulty Estimation
+            </h4>
+
+            <p>
+              <strong>Taewoong Yoon</strong>,
+              Geunyeong Jeong,
+              Harksoo Kim
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="publication">
+
+          <div class="pub-index">
+            05
+          </div>
+
+          <div class="pub-content">
+
+            <div class="venue">
+              KCC 2026 · Oral
+            </div>
+
+            <h4>
+              Improving LLM Elimination-Based Selection
+              via Relative Comparison of Confidence Scores
+            </h4>
+
+            <p>
+              Hyunwook Jeong,
+              Geunyeong Jeong,
+              <strong>Taewoong Yoon</strong>,
+              Harksoo Kim
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="publication-year">
+
+        <h3 class="year">
+          2025
+        </h3>
+
+
+        <article class="publication">
+
+          <div class="pub-index">
+            01
+          </div>
+
+          <div class="pub-content">
+
+            <div class="venue">
+              HCLT-KACL 2025 · Oral
+            </div>
+
+            <h4>
+              Improving Reasoning Ability of Large Language Models
+              Using Token Confidence based Self Consistency
+            </h4>
+
+            <p>
+              <strong>Taewoong Yoon</strong>,
+              Geunyeong Jeong,
+              Harksoo Kim
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="publication">
+
+          <div class="pub-index">
+            02
+          </div>
+
+          <div class="pub-content">
+
+            <div class="venue">
+              KCC 2025 · Oral
+            </div>
+
+            <h4>
+              Improving Mathematical Reasoning of Large Language Models
+              via Loss Weighting on Mathematical Expressions
+            </h4>
+
+            <p>
+              <strong>Taewoong Yoon</strong>,
+              Geunyeong Jeong,
+              Harksoo Kim
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="publication">
+
+          <div class="pub-index">
+            03
+          </div>
+
+          <div class="pub-content">
+
+            <div class="venue">
+              KCC 2025 · Poster
+            </div>
+
+            <h4>
+              LoCCA-Frame:
+              A Low-Cost and Strategy-Guided Prompting Framework
+              for Enhancing Diagnosis-Prediction Mental Health Counseling
+            </h4>
+
+            <p>
+              Kwangil Kim,
+              Seulgi Kim,
+              Seongbae Park,
+              <strong>Taewoong Yoon</strong>,
+              Jiwoo Song,
+              Yeonseok Choi,
+              Harksoo Kim
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- AWARDS -->
+  <section
+    class="band band-alt"
+    id="awards"
+  >
+    <div class="container">
+
+      <div class="section-title">
+        <span>05</span>
+        <h2>Honors &amp; Awards</h2>
+      </div>
+
+
+      <div class="awards-grid">
+
+        <article class="award-card">
+
+          <span class="award-year">
+            2026
+          </span>
+
+          <h3>
+            KU Honorary Grand Prize
+          </h3>
+
+          <p>
+            KUNLP Team · Konkuk University
+          </p>
+
+        </article>
+
+
+        <article class="award-card">
+
+          <span class="award-year">
+            2025
+          </span>
+
+          <h3>
+            Grand Award &amp; KT Special Award
+          </h3>
+
+          <p>
+            National Institute of Korean Language AI Competition
+          </p>
+
+          <small>
+            Minister of Culture, Sports and Tourism Award
+          </small>
+
+        </article>
+
+
+        <article class="award-card">
+
+          <span class="award-year">
+            2024
+          </span>
+
+          <h3>
+            Grand Award
+          </h3>
+
+          <p>
+            Microsoft Korea Artificial Intelligence Competition
+          </p>
+
+        </article>
+
+
+        <article class="award-card">
+
+          <span class="award-year">
+            2024
+          </span>
+
+          <h3>
+            Excellent Paper Award
+          </h3>
+
+          <p>
+            KAICTS Spring Conference
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="talk-block">
+
+        <span>
+          Invited Talk
+        </span>
+
         <div>
-          <h3>Alumni Invited Talk</h3>
-          <p>Department of Artificial Intelligence, Konyang University</p>
+
+          <h3>
+            Alumni Invited Talk
+          </h3>
+
+          <p>
+            Department of Artificial Intelligence,
+            Konyang University · Feb 27, 2026
+          </p>
+
         </div>
+
       </div>
-    </section>
 
-    <section id="contact" class="section contact-section">
-      <div>
-        <p class="section-kicker">Contact</p>
-        <h2>Let's connect.</h2>
-        <p>For research discussions or collaboration, feel free to contact me by email.</p>
-      </div>
-      <a class="button primary large" href="mailto:taewoong816@gmail.com">taewoong816@gmail.com</a>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Taewoong Yoon. Built for GitHub Pages.</p>
-  </footer>
+</main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
+<footer>
+  <div class="container footer-inner">
+
+    <p>
+      © <span id="year"></span> Taewoong Yoon
+    </p>
+
+    <p>
+      Seoul, Republic of Korea
+    </p>
+
+  </div>
+</footer>
+
+
+<script src="main.js"></script>
+
 </body>
 </html>
