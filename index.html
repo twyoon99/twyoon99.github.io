@@ -20,6 +20,39 @@
   >
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Publication fallbacks; the existing styles.css layout is retained. -->
+  <style>
+    #publications .pub-thumbnail-placeholder {
+      display: grid;
+      place-content: center;
+      width: 100%;
+      aspect-ratio: 210 / 297;
+      box-sizing: border-box;
+      padding: 0.75rem 0.5rem;
+      border: 1px solid currentColor;
+      border-radius: inherit;
+      font-size: 0.6875rem;
+      line-height: 1.5;
+      text-align: center;
+      opacity: 0.55;
+    }
+
+    #publications .pub-thumbnail-placeholder[hidden],
+    #publications .pub-thumbnail img[hidden] {
+      display: none;
+    }
+
+    #publications .pub-thumbnail[aria-disabled="true"]:not([href]),
+    #publications .pub-action[aria-disabled="true"]:not([href]) {
+      cursor: default;
+    }
+
+    #publications .pub-action[aria-disabled="true"]:not([href]) {
+      opacity: 0.35;
+      pointer-events: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -292,6 +325,7 @@
 
 
   <!-- PUBLICATIONS -->
+  <!-- Supplied image awaiting paper identification: assets/papers/dissolution.png. -->
   <section
     class="band"
     id="publications"
@@ -320,7 +354,7 @@
           <div class="pub-index">
             01
           </div>
-        
+
           <a
             class="pub-thumbnail"
             href="https://doi.org/10.1145/3770855.3817554"
@@ -332,8 +366,11 @@
               alt="First page of MMID"
               loading="lazy"
             />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
           </a>
-        
+
           <div class="pub-content">
         
             <div class="venue">
@@ -351,16 +388,17 @@
             </p>
         
           </div>
-        
+
           <a
             class="pub-action"
             href="https://doi.org/10.1145/3770855.3817554"
             target="_blank"
             rel="noopener"
+            aria-label="Open MMID: Multi-turn Multimodal Interactive Dialogue Benchmark"
           >
             ↗
           </a>
-        
+
         </article>
 
         
@@ -369,6 +407,22 @@
           <div class="pub-index">
             02
           </div>
+
+          <a
+            class="pub-thumbnail"
+            href="https://arxiv.org/abs/2602.09438"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="assets/papers/actsc.png"
+              alt="First page of Beyond Relative Difficulty"
+              loading="lazy"
+            />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -392,16 +446,13 @@
           </div>
 
           <a
-            class="pub-thumbnail"
+            class="pub-action"
             href="https://arxiv.org/abs/2602.09438"
             target="_blank"
             rel="noopener"
+            aria-label="Open Beyond Relative Difficulty: Absolute Difficulty Estimation for Efficient Adaptive Self-Consistency"
           >
-            <img
-              src="assets/papers/actsc.png"
-              alt="First page of Beyond Relative Difficulty"
-              loading="lazy"
-            />
+            ↗
           </a>
 
         </article>
@@ -412,7 +463,7 @@
           <div class="pub-index">
             03
           </div>
-        
+
           <a
             class="pub-thumbnail"
             href="https://arxiv.org/abs/2608.24590"
@@ -424,8 +475,11 @@
               alt="First page of Is Discrete Difficulty Sufficient?"
               loading="lazy"
             />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
           </a>
-        
+
           <div class="pub-content">
         
             <div class="venue">
@@ -448,16 +502,17 @@
             </p>
         
           </div>
-        
+
           <a
             class="pub-action"
             href="https://arxiv.org/abs/2608.24590"
             target="_blank"
             rel="noopener"
+            aria-label="Open Is Discrete Difficulty Sufficient? Leveraging Continuous Difficulty for Efficient Self-Consistency in LLMs"
           >
             ↗
           </a>
-        
+
         </article>
 
         
@@ -466,6 +521,21 @@
           <div class="pub-index">
             04
           </div>
+
+          <!-- TODO: Add this paper's URL as href to both anchors below.
+               Then remove aria-disabled and title, and add
+               target="_blank" rel="noopener" for external links. -->
+          <a
+            class="pub-thumbnail"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            <!-- TODO: Confirm the image filename for the HCLT 2026 consensus-guided selective verdict paper.
+                 Insert its img element here and add hidden to the placeholder below. -->
+            <span class="pub-thumbnail-placeholder">
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -486,14 +556,40 @@
 
           </div>
 
+          <a
+            class="pub-action"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            ↗
+          </a>
+
         </article>
 
 
         <article class="publication">
 
           <div class="pub-index">
-            04
+            05
           </div>
+
+          <!-- TODO: Add this paper's URL as href to both anchors below.
+               Then remove aria-disabled and title, and add
+               target="_blank" rel="noopener" for external links. -->
+          <a
+            class="pub-thumbnail"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            <img
+              src="assets/papers/kcc2026-neuron.png"
+              alt="First page of Improving Efficiency Self-Consistency via Neuron Based Difficulty Estimation"
+              loading="lazy"
+            />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -514,14 +610,40 @@
 
           </div>
 
+          <a
+            class="pub-action"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            ↗
+          </a>
+
         </article>
 
 
         <article class="publication">
 
           <div class="pub-index">
-            05
+            06
           </div>
+
+          <!-- TODO: Add this paper's URL as href to both anchors below.
+               Then remove aria-disabled and title, and add
+               target="_blank" rel="noopener" for external links. -->
+          <a
+            class="pub-thumbnail"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            <img
+              src="assets/papers/kcc2026-selection.png"
+              alt="First page of Improving LLM Elimination-Based Selection via Relative Comparison of Confidence Scores"
+              loading="lazy"
+            />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -543,6 +665,14 @@
 
           </div>
 
+          <a
+            class="pub-action"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            ↗
+          </a>
+
         </article>
 
       </div>
@@ -560,6 +690,24 @@
           <div class="pub-index">
             01
           </div>
+
+          <!-- TODO: Add this paper's URL as href to both anchors below.
+               Then remove aria-disabled and title, and add
+               target="_blank" rel="noopener" for external links. -->
+          <a
+            class="pub-thumbnail"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            <img
+              src="assets/papers/tcsc.png"
+              alt="First page of Improving Reasoning Ability of Large Language Models Using Token Confidence based Self Consistency"
+              loading="lazy"
+            />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -580,6 +728,14 @@
 
           </div>
 
+          <a
+            class="pub-action"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            ↗
+          </a>
+
         </article>
 
 
@@ -588,6 +744,24 @@
           <div class="pub-index">
             02
           </div>
+
+          <!-- TODO: Add this paper's URL as href to both anchors below.
+               Then remove aria-disabled and title, and add
+               target="_blank" rel="noopener" for external links. -->
+          <a
+            class="pub-thumbnail"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            <img
+              src="assets/papers/math-loss.png"
+              alt="First page of Improving Mathematical Reasoning of Large Language Models via Loss Weighting on Mathematical Expressions"
+              loading="lazy"
+            />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -608,6 +782,14 @@
 
           </div>
 
+          <a
+            class="pub-action"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            ↗
+          </a>
+
         </article>
 
 
@@ -616,6 +798,24 @@
           <div class="pub-index">
             03
           </div>
+
+          <!-- TODO: Add this paper's URL as href to both anchors below.
+               Then remove aria-disabled and title, and add
+               target="_blank" rel="noopener" for external links. -->
+          <a
+            class="pub-thumbnail"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            <img
+              src="assets/papers/locca.png"
+              alt="First page of LoCCA-Frame: A Low-Cost and Strategy-Guided Prompting Framework for Enhancing Diagnosis-Prediction Mental Health Counseling"
+              loading="lazy"
+            />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -641,6 +841,14 @@
 
           </div>
 
+          <a
+            class="pub-action"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            ↗
+          </a>
+
         </article>
 
       </div>
@@ -657,6 +865,24 @@
           <div class="pub-index">
             01
           </div>
+
+          <!-- TODO: Add this paper's URL as href to both anchors below.
+               Then remove aria-disabled and title, and add
+               target="_blank" rel="noopener" for external links. -->
+          <a
+            class="pub-thumbnail"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            <img
+              src="assets/papers/eeg-journal.png"
+              alt="First page of Predicting Behavior through EEG Signal Analysis: A Comparative Study of LSTM and Transformer Models"
+              loading="lazy"
+            />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -678,6 +904,14 @@
 
           </div>
 
+          <a
+            class="pub-action"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            ↗
+          </a>
+
         </article>
 
 
@@ -686,6 +920,24 @@
           <div class="pub-index">
             02
           </div>
+
+          <!-- TODO: Add this paper's URL as href to both anchors below.
+               Then remove aria-disabled and title, and add
+               target="_blank" rel="noopener" for external links. -->
+          <a
+            class="pub-thumbnail"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            <img
+              src="assets/papers/eeg-conference.png"
+              alt="First page of A Study on the Comparison of EEG Behavior Identification LSTM and Transformer Model"
+              loading="lazy"
+            />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -707,6 +959,14 @@
 
           </div>
 
+          <a
+            class="pub-action"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            ↗
+          </a>
+
         </article>
 
       </div>
@@ -723,6 +983,21 @@
           <div class="pub-index">
             01
           </div>
+
+          <!-- TODO: Add this paper's URL as href to both anchors below.
+               Then remove aria-disabled and title, and add
+               target="_blank" rel="noopener" for external links. -->
+          <a
+            class="pub-thumbnail"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            <!-- TODO: Confirm the image filename for the CEIC 2022 EEG paper.
+                 Insert its img element here and add hidden to the placeholder below. -->
+            <span class="pub-thumbnail-placeholder">
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -744,6 +1019,14 @@
 
           </div>
 
+          <a
+            class="pub-action"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            ↗
+          </a>
+
         </article>
 
 
@@ -752,6 +1035,24 @@
           <div class="pub-index">
             02
           </div>
+
+          <!-- TODO: Add this paper's URL as href to both anchors below.
+               Then remove aria-disabled and title, and add
+               target="_blank" rel="noopener" for external links. -->
+          <a
+            class="pub-thumbnail"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            <img
+              src="assets/papers/retinal.png"
+              alt="First page of A Study on the Comparative Analysis of Pre-Provessing for Retinal Vessel Segmentation"
+              loading="lazy"
+            />
+            <span class="pub-thumbnail-placeholder" hidden>
+              Preview<br>unavailable
+            </span>
+          </a>
 
           <div class="pub-content">
 
@@ -773,6 +1074,14 @@
             </p>
 
           </div>
+
+          <a
+            class="pub-action"
+            aria-disabled="true"
+            title="Paper link not provided"
+          >
+            ↗
+          </a>
 
         </article>
 
@@ -910,6 +1219,34 @@
   </div>
 </footer>
 
+
+<!-- Show a neutral placeholder when a paper preview is not available. -->
+<script>
+  (() => {
+    document.querySelectorAll("#publications .pub-thumbnail img").forEach((image) => {
+      const placeholder = image.nextElementSibling;
+      if (!placeholder || !placeholder.classList.contains("pub-thumbnail-placeholder")) {
+        return;
+      }
+
+      const showPlaceholder = () => {
+        image.hidden = true;
+        placeholder.hidden = false;
+      };
+
+      image.addEventListener("error", showPlaceholder);
+      image.addEventListener("load", () => {
+        image.hidden = false;
+        placeholder.hidden = true;
+      });
+
+      // Also handle image errors that happened before this script ran.
+      if (image.complete && image.naturalWidth === 0) {
+        showPlaceholder();
+      }
+    });
+  })();
+</script>
 
 <script src="main.js"></script>
 
