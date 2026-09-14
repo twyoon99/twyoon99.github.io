@@ -34,7 +34,6 @@
     <nav class="nav" id="nav">
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
-      <a href="#work">Selected Work</a>
       <a href="#publications">Publications</a>
       <a href="#awards">Awards</a>
     </nav>
@@ -292,197 +291,6 @@
   </section>
 
 
-  <!-- SELECTED WORK -->
-  <section
-    class="band band-alt"
-    id="work"
-  >
-    <div class="container">
-
-      <div class="section-title">
-        <span>03</span>
-        <h2>Selected Work</h2>
-      </div>
-
-
-      <div class="work-list">
-
-        <!-- ACTSC -->
-        <article class="work-card reveal">
-
-          <div
-            class="paper-media"
-            data-fallback="ACTSC · arXiv 2026"
-          >
-            <img
-              src="assets/papers/actsc.png"
-              alt="First page of ACTSC"
-              loading="lazy"
-            />
-          </div>
-
-          <div class="work-body">
-
-            <div class="venue">
-              arXiv 2026
-            </div>
-
-            <h3>
-              Beyond Relative Difficulty: 
-              Absolute Difficulty Estimation for Efficient Adaptive Self-Consistency
-            </h3>
-
-            <p class="authors">
-              <strong>Taewoong Yoon</strong>,
-              Geunyeong Jeong,
-              Geon Park,
-              Sihyeong Yeom,
-              Harksoo Kim
-            </p>
-
-            <p class="work-description">
-              Estimates problem difficulty directly from internal
-              activation signals and adaptively controls the
-              self-consistency sampling budget without pre-sampling.
-            </p>
-
-            <div class="paper-links">
-
-              <a
-                href="https://arxiv.org/abs/2602.09438"
-                target="_blank"
-                rel="noopener"
-              >
-                arXiv ↗
-              </a>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-        <!-- FSC -->
-        <article class="work-card reveal">
-
-          <div
-            class="paper-media"
-            data-fallback="FSC · arXiv 2026"
-          >
-            <img
-              src="assets/papers/fsc.png"
-              alt="First page of Flexible Self-Consistency"
-              loading="lazy"
-            />
-          </div>
-
-          <div class="work-body">
-
-            <div class="venue">
-              arXiv 2026
-            </div>
-
-            <h3>
-              Is Discrete Difficulty Sufficient?
-              Leveraging Continuous Difficulty for
-              Efficient Self-Consistency in LLMs
-            </h3>
-
-            <p class="authors">
-              Sihyeong Yeom,
-              Geon Park,
-              Geunyeong Jeong,
-              <strong>Taewoong Yoon</strong>,
-              Jaewook Lee,
-              Harksoo Kim
-            </p>
-
-            <p class="work-description">
-              Uses predicted output entropy as a continuous
-              difficulty signal to allocate reasoning paths
-              more precisely and reduce unnecessary inference cost.
-            </p>
-
-            <div class="paper-links">
-
-              <a
-                href="https://arxiv.org/abs/2608.24590"
-                target="_blank"
-                rel="noopener"
-              >
-                arXiv ↗
-              </a>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-        <!-- MMID -->
-        <article class="work-card reveal">
-
-          <div
-            class="paper-media"
-            data-fallback="MMID · KDD 2026"
-          >
-            <img
-              src="assets/papers/mmid.png"
-              alt="First page of MMID"
-              loading="lazy"
-            />
-          </div>
-
-          <div class="work-body">
-
-            <div class="venue">
-              KDD 2026 · Datasets &amp; Benchmarks Track
-            </div>
-
-            <h3>
-              MMID:
-              Multi-turn Multimodal Interactive Dialogue Benchmark
-            </h3>
-
-            <p class="authors">
-              Seulgi Kim*,
-              Juoh Sun*,
-              Sumin Kim,
-              <strong>Taewoong Yoon</strong>,
-              YuShin Kim,
-              Saim Shin,
-              Harksoo Kim
-            </p>
-
-            <p class="work-description">
-              A benchmark designed to evaluate multimodal models
-              under interactive and multi-turn dialogue settings.
-            </p>
-
-            <div class="paper-links">
-
-              <a
-                href="https://doi.org/10.1145/3770855.3817554"
-                target="_blank"
-                rel="noopener"
-              >
-                Paper ↗
-              </a>
-
-            </div>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </div>
-  </section>
-
-
   <!-- PUBLICATIONS -->
   <section
     class="band"
@@ -512,25 +320,38 @@
           <div class="pub-index">
             01
           </div>
-
+        
+          <a
+            class="pub-thumbnail"
+            href="https://doi.org/10.1145/3770855.3817554"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="assets/papers/mmid.png"
+              alt="First page of MMID"
+              loading="lazy"
+            />
+          </a>
+        
           <div class="pub-content">
-
+        
             <div class="venue">
               KDD 2026 · D&amp;B Track
             </div>
-
+        
             <h4>
               MMID: Multi-turn Multimodal Interactive Dialogue Benchmark
             </h4>
-
+        
             <p>
               Seulgi Kim*, Juoh Sun*, Sumin Kim,
               <strong>Taewoong Yoon</strong>,
               YuShin Kim, Saim Shin, Harksoo Kim
             </p>
-
+        
           </div>
-
+        
           <a
             class="pub-action"
             href="https://doi.org/10.1145/3770855.3817554"
@@ -539,7 +360,7 @@
           >
             ↗
           </a>
-
+        
         </article>
 
         
@@ -571,12 +392,16 @@
           </div>
 
           <a
-            class="pub-action"
+            class="pub-thumbnail"
             href="https://arxiv.org/abs/2602.09438"
             target="_blank"
             rel="noopener"
           >
-            ↗
+            <img
+              src="assets/papers/actsc.png"
+              alt="First page of Beyond Relative Difficulty"
+              loading="lazy"
+            />
           </a>
 
         </article>
@@ -587,19 +412,32 @@
           <div class="pub-index">
             03
           </div>
-
+        
+          <a
+            class="pub-thumbnail"
+            href="https://arxiv.org/abs/2608.24590"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="assets/papers/fsc.png"
+              alt="First page of Is Discrete Difficulty Sufficient?"
+              loading="lazy"
+            />
+          </a>
+        
           <div class="pub-content">
-
+        
             <div class="venue">
               arXiv 2026
             </div>
-
+        
             <h4>
               Is Discrete Difficulty Sufficient?
               Leveraging Continuous Difficulty for
               Efficient Self-Consistency in LLMs
             </h4>
-
+        
             <p>
               Sihyeong Yeom,
               Geon Park,
@@ -608,9 +446,9 @@
               Jaewook Lee,
               Harksoo Kim
             </p>
-
+        
           </div>
-
+        
           <a
             class="pub-action"
             href="https://arxiv.org/abs/2608.24590"
@@ -619,7 +457,7 @@
           >
             ↗
           </a>
-
+        
         </article>
 
         
